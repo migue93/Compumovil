@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="co.edu.udea.compumovil.gr08_20181.lab1.Platos">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <EditText
         android:id="@+id/nombre"
         android:layout_width="wrap_content"
@@ -199,7 +207,7 @@
 
     <TextView
         android:id="@+id/textnombre"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -207,7 +215,13 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingredientes" />
+        app:layout_constraintTop_toBottomOf="@+id/ingredientes"
+        app:layout_constraintVertical_bias="0.075" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
